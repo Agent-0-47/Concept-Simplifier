@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept Simplifier</title>
+    <script src="/static/js/animations.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800" style="background-color:#ADD8E6;"> ">
+    <div class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold text-center mb-6 animate-bounce"><marquee><b>Concept Simplifier</b> </marquee></h1>
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <label for="topic" class="text-3xl font-bold text-center mb-6 animate-bounce">Enter a complex topic:</label>
+            <input id="topic" type="text" class="w-full border border-gray-300 rounded-lg p-2 mb-4" placeholder="e.g., Quantum Mechanics">
+            <button id="simplify-btn" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all">
+                Simplify
+            </button>
+            <div id="output" class="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-lg hidden">
+                <h2 class="text-xl font-semibold mb-2">Simplified Concept:</h2>
+                <p id="concept-text" class="text-gray-700"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
